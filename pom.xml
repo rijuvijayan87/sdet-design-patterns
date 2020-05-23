@@ -36,11 +36,16 @@
       <version>${testng-version}</version>
       <scope>test</scope>
     </dependency>
-
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>4.0.0</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <build>
-    <finalName>test-design-pattern</finalName>
+    <finalName>test-automation</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
