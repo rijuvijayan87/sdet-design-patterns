@@ -1,4 +1,4 @@
-package designPatterns.srp;
+package designPatterns.srp.common;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

@@ -1,4 +1,4 @@
-package designPatterns.srp;
+package designPatterns.srp.common;
 
 import com.google.common.util.concurrent.Uninterruptibles;
 import org.openqa.selenium.WebDriver;
@@ -19,8 +19,8 @@ public class SearchWidget extends AbstractComponent {
     public void enter(String keyword) {
         this.searchBox.clear();
         for (char ch : keyword.toCharArray()) {
-            Uninterruptibles.sleepUninterruptibly(20, TimeUnit.MILLISECONDS);
             this.searchBox.sendKeys(ch + "");
+            Uninterruptibles.sleepUninterruptibly(20, TimeUnit.MILLISECONDS);
         }
 
     }
